@@ -6,3 +6,5 @@ spring:
     password: admin
 server:
   port: 9000
+jwt:
+  secret-key: jksalgdjdkljhKLJHKLSJGJasdjhgksadhjwetwetysGSDH
