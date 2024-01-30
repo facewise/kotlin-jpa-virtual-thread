@@ -11,9 +11,8 @@ class UserController {
 
     @GetMapping
     fun get(): String {
-        log.info("in")
-        Thread.sleep(100)
-        log.info("out")
+        log.info("VT: {}", Thread.currentThread().isVirtual)
+        Thread.sleep(300)
         return "ok"
     }
 }
