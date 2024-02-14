@@ -1,4 +1,3 @@
-
 server:
   port: 9000
 spring:
@@ -7,3 +6,9 @@ spring:
     url: jdbc:postgresql://192.168.91.128:5432/postgres
     username: postgres
     password: postgres
+    hikari:
+      minimum-idle: 10
+      maximum-pool-size: 100
+  threads:
+    virtual:
+      enabled: true
